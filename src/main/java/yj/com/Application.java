@@ -1,14 +1,14 @@
-package yj.zljjc;
+package yj.com;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("yj.zljjc.dao")
-public class ZljjcApplication {
+@MapperScan("yj.com.dao")
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ZljjcApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 }

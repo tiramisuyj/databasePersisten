@@ -1,12 +1,14 @@
-package yj.zljjc.controller;
+package yj.com.controller;
+
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import yj.zljjc.dao.AccountMapper;
-import yj.zljjc.entity.Account;
+import yj.com.dao.AccountMapper;
+import yj.com.entity.Account;
 
 /** 
 * @author yj 
@@ -22,7 +24,7 @@ public class IndexController {
 	@RequestMapping("/")
 	public String index() {
 		Account account = new Account();
-		account.setAccountId("2");
+		account.setAccountId(new Date().toString());
 		account.setName("a");
 		accountMapper.insert(account);
 //		Account account = accountMapper.findByAccountId("1");

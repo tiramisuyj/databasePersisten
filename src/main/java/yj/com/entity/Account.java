@@ -1,4 +1,4 @@
-package yj.zljjc.entity;
+package yj.com.entity;
 /** 
 * @author yj 
 * @date 2018-11-01 

@@ -1,6 +1,6 @@
-package yj.zljjc.dao;
+package yj.com.dao;
 
-import yj.zljjc.entity.Account;
+import yj.com.entity.Account;
 
 /** 
 * @author yj 

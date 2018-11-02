@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="yj.zljjc.dao.AccountMapper" >
+<mapper namespace="yj.com.dao.AccountMapper" >
 	
 	<sql id="baseColumnList">
 		ACCOUNT_ID as accountId,
 		NAME as name
 	</sql>
 	
-	<insert id="insert" parameterType="yj.zljjc.entity.Account">
+	<insert id="insert" parameterType="yj.com.entity.Account">
 		INSERT INTO ACCOUNT(
 			ACCOUNT_ID,
 			NAME
@@ -17,7 +17,7 @@
 		)
 	</insert>
 	
-	<update id="update" parameterType="yj.zljjc.entity.Account">
+	<update id="update" parameterType="yj.com.entity.Account">
 		UPDATE ACCOUNT
 		<set>
 			NAME = #{name}
@@ -29,7 +29,7 @@
 		DELETE FROM ACCOUNT WHERE ACCOUNT_ID = #{accountId}
 	</delete>
 	
-	<select id="findByAccountId" resultType="yj.zljjc.entity.Account">
+	<select id="findByAccountId" resultType="yj.com.entity.Account">
 		SELECT <include refid="baseColumnList" />
 		FROM ACCOUNT
 		WHERE ACCOUNT_ID = #{accountId}
